@@ -96,9 +96,32 @@ namespace Demo
 
             #endregion
 
-            #region Casting Overloading
+            #region Casting operator Overloading
+
+            #region Ex01
+            //// boxing from value type to reference type
+            //object obj = 2;
+
+            ////explicit casting
+            //// unboxing
+            //int X = (int) obj;
+
+            //// the casting operator cannot change from userdefind data type to integer
+            //ComplexNumss C1 = new ComplexNumss() { Real = 2 , Imag = 4 };
+            //int Y = (int)C1;
+            ////int Y = C1; // invalid because i make the operator overloading with explicit and it more recomend because the readability
+            //Console.WriteLine(Y);
+
+            ////string Name = (string)C1;
+            //string Name = C1; // Valid because if i made it implicit it will work in the imlicit and explicit
+            //Console.WriteLine(Name);
+            #endregion
+
+            #region E02 Mapping Casting Operator Overloading
 
 
+
+            #endregion
 
             #endregion
 

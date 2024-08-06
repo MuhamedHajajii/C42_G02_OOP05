@@ -68,5 +68,14 @@ namespace Demo.ComplexNums
                 return Left.Real < Right.Real;
         }
 
+        public static explicit operator int(ComplexNumss C)
+        {
+            return C?.Real ?? 0;
+        }
+
+        public static implicit operator string(ComplexNumss c)
+        {
+            return c?.ToString() ?? "";
+        }
     }
 }
