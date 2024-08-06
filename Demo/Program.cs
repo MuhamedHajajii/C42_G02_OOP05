@@ -53,7 +53,25 @@ namespace Demo
             //C5 += C3;
             #endregion
 
+            #region unary operators
+            //ComplexNumss C1 = new ComplexNumss()
+            //{
+            //    Real = 2 , Imag = 3
+            //};
+            //ComplexNumss C3 = ++C1;
+            //Console.WriteLine(C3);
 
+            //ComplexNumss C1 = new ComplexNumss()
+            //{
+            //    Real = 2,
+            //    Imag = 3
+            //};
+            //ComplexNumss C3 = --C1;
+            //Console.WriteLine(C3);
+
+            //it works even with the postfix or prefix
+
+            #endregion
 
 
 

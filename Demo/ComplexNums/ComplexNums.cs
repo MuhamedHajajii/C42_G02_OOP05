@@ -36,5 +36,21 @@ namespace Demo.ComplexNums
             };
         }
 
+        public static ComplexNumss operator ++(ComplexNumss C)
+        {
+            return new ComplexNumss()
+            {
+                Real = (C?.Real?? 0) + 1,
+                Imag = C?.Imag ??0
+            };
+        }
+        public static ComplexNumss operator --(ComplexNumss C)
+        {
+            return new ComplexNumss()
+            {
+                Real = (C?.Real ?? 0) - 1,
+                Imag = C?.Imag ?? 0
+            };
+        }
     }
 }
