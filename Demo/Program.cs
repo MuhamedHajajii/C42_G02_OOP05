@@ -1,4 +1,5 @@
-﻿using Demo.ComplexNums;
+﻿using Demo.Casting_operator_overloading;
+using Demo.ComplexNums;
 
 namespace Demo
 {
@@ -119,13 +120,49 @@ namespace Demo
 
             #region E02 Mapping Casting Operator Overloading
 
+            /** When we start with web
+             * in the mvc specially
+             * always will be there a class to sumilate the table in the database
+             * and another class will contain the data which i want to store
+             */
 
+            // EmployeeViewModel -- Then Change It to EmployeeModel -- Database
+            // Database --> Employee --> EmployeeViewModel
+
+            //Employee employee1 = new Employee()
+            //{
+            //    Id = 1,
+            //    FullName = "Aliaa Tarek",
+            //    PassWord = "PassWord",
+            //    Email = "AliaaTarek@Gmail.com",
+            //    SequertyStamp = Guid.NewGuid()
+            //};
+
+            //EmployeeViewModel viewModel = new EmployeeViewModel();
+            //viewModel = (EmployeeViewModel)employee1;
+            //Console.WriteLine( viewModel.FirstName);
+            //Console.WriteLine( viewModel.LastName);
+            //Console.WriteLine( viewModel.Email);
+            //// need to make a casting operator overloading
+
+            //// boxing from value type to reference type and store the value type in the heap
+            //// unboxing from reference type to value type and store the refernece type in the stacl
+            //// from value type to value type 
+            //// from reference type to reference type
+
+            //// the operator of employeeviewmodel is already existed before i override it
+            //// i didn't implement this before but already exist before
+            //// any defind datatype can transafer data from type object to the datatype
+            //// in this case we only ignore the ref of the object
+            //// but when i applay the explicit casting it will show the error if i didn't make the casting operator overloading
+            //object obj = new EmployeeViewModel();
+            //EmployeeViewModel E = (EmployeeViewModel) obj;
 
             #endregion
 
             #endregion
 
             #endregion
-        }
+        } 
     }
 }
