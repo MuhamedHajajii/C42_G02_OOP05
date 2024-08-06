@@ -25,7 +25,8 @@ namespace Demo
              * but keep separate them by the number and the type and the sequecne of the type
              */
 
-            // Operator overloading
+
+            #region Overloading Operators
 
             #region Binary Operator OverLoading
             // complex numbers - real and imaginary
@@ -73,7 +74,33 @@ namespace Demo
 
             #endregion
 
+            #region Relational Operators - [Comparison Operatorts]
 
+            //ComplexNumss C1 = new ComplexNumss()
+            //{
+            //    Real = 2,Imag = 5
+            //};
+            //ComplexNumss C2 = new ComplexNumss()
+            //{
+            //    Real = 2,
+            //    Imag = 4
+            //};
+
+            //if(C1 > C2)
+            //    { Console.WriteLine("C1 Grater Than C2"); }
+            //else if (C1 < C2)
+            //    { Console.WriteLine("C2 Grater Than C1"); }
+            // != and == Comes from the object its works with the reference but if you want to change the behavior you must overload it
+            #endregion
+
+
+            #endregion
+
+            #region Casting Overloading
+
+
+
+            #endregion
 
             #endregion
         }

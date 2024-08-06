@@ -52,5 +52,21 @@ namespace Demo.ComplexNums
                 Imag = C?.Imag ?? 0
             };
         }
+
+        public static bool operator >(ComplexNumss Left, ComplexNumss Right)
+        {
+            if(Left.Real == Right.Real)
+                return Left.Imag > Right.Imag;
+            else 
+                return Left.Real > Right.Real;
+        }
+        public static bool operator <(ComplexNumss Left, ComplexNumss Right)
+        {
+            if (Left.Real == Right.Real)
+                return Left.Imag < Right.Imag;
+            else
+                return Left.Real < Right.Real;
+        }
+
     }
 }
