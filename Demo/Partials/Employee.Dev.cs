@@ -9,7 +9,7 @@ namespace Demo.Partials
 {
     internal partial class Employee : Parent
     {
-        public void Print()
+        public override void Print()
         {
             Console.WriteLine("I'm Employee");
         }
