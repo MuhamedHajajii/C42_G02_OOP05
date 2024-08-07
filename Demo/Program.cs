@@ -1,6 +1,7 @@
 ﻿using Demo.Abstractions;
 using Demo.Casting_operator_overloading;
 using Demo.ComplexNums;
+using Demo.statics;
 
 namespace Demo
 {
@@ -202,6 +203,22 @@ namespace Demo
             // i will take the dim01 and dim02 but i don't know what the shape i will calc the area for it 
             #endregion
 
+            #region 4- Static
+            // what i can type static class , methods , constructor, property , attribute
+
+            //Utility U01 = new Utility(10,20);
+            //Console.WriteLine($"Cm To Inch = {U01.CmToInch(254)}");
+
+            //Utility U02 = new Utility(100, 200);
+            //Console.WriteLine($"Cm To Inch = {U01.CmToInch(254)}");
+
+            // if the result of the calling method cmtoinch will not differ
+            // by difference of the object state
+            // if the method doesn't depend of the object state so i can make it static 
+
+            //Console.WriteLine(Utility.CmToInch(254));
+
+            #endregion
         } 
     }
 }
