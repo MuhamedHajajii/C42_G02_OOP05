@@ -1,6 +1,6 @@
 ﻿using Demo.Abstractions;
-using Demo.Casting_operator_overloading;
 using Demo.ComplexNums;
+using Demo.Partials;
 using Demo.statics;
 
 namespace Demo
@@ -203,7 +203,7 @@ namespace Demo
             // i will take the dim01 and dim02 but i don't know what the shape i will calc the area for it 
             #endregion
 
-            #region 4- Static
+            #region 3- Static
             // what i can type static class , methods , constructor, property , attribute
 
             //Utility U01 = new Utility(10,20);
@@ -219,6 +219,28 @@ namespace Demo
             //Console.WriteLine(Utility.CmToInch(254));
 
             #endregion
+
+            #region 4- Sealed
+            // the documentation in the Sealeds Namespace
+            #endregion
+
+            #region 5- Partial
+
+            // separate the code of the same class into two classes in a differnent files
+            // the compiler will deal with them as a one file 
+            // not like the mapping in the mapping we have two classes with differenct names
+            // like model which will represent the table and the viewmodel is the code or viewfor the model
+            // in the partial i have two classes with the same name and the compiler will deal with them like one file 
+            // because if i conect with the database and change any thing and try to sync the changes from the database the enitiy framework
+            // will remove the old file and return a new file so i will not be able to add methods or logic 
+            // so i go and make another class with the same name and let the compiler deal with both of them 
+            // with the keyword is partial class
+
+            //Employee employee = new Employee();
+            //employee.Test = 10;
+            // this class is separated to two differenct classes
+            #endregion
+
         } 
     }
 }
