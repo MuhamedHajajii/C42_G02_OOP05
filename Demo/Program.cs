@@ -1,4 +1,5 @@
-﻿using Demo.Casting_operator_overloading;
+﻿using Demo.Abstractions;
+using Demo.Casting_operator_overloading;
 using Demo.ComplexNums;
 
 namespace Demo
@@ -162,7 +163,45 @@ namespace Demo
 
             #endregion
 
+
+
             #endregion
+
+            #region 2- Abstract Class 
+            // abstraction is like a guid line or a part from the encapsolation
+            // we start separate the useless data from class use 
+
+            //Rectangle rectangle = new Rectangle(10,20);
+
+            //decimal RecArea = rectangle.CalcArea();
+            //Console.WriteLine(RecArea);
+
+            //Console.WriteLine(rectangle.Perimetere);
+
+            //Circle cirlce = new Circle(30);
+            //Console.WriteLine(cirlce.CalcArea());
+            //Console.WriteLine(cirlce.Perimetere);
+
+            // can create reference from it 
+            // this class must inherit and implement from it
+            //Shape shape = new Rectangle(10,20);
+            //Console.WriteLine(shape.CalcArea());
+            //Console.WriteLine(shape.Perimetere);
+            // abstract method abstract constructor abstract property
+
+            // abstract class is mix between two things implemented and not fully implemeted every one of them has his own functionality
+
+            //Rectangle rec = new Rectangle(10, 20);
+            //Rectangle.Dim01 = 10; // invalid because its readyonly and can make private too 
+            // so i can hide the data whenever i want 
+
+            // the abstract class is a partial implementation for another calss 
+            // and the interface is a code contract for the following classes
+            // partial implementation for the functions 
+            // parital implementation for someparts of the code 
+            // i will take the dim01 and dim02 but i don't know what the shape i will calc the area for it 
+            #endregion
+
         } 
     }
 }
